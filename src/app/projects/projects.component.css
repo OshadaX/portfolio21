@@ -1,99 +1,72 @@
 .projects {
-    background-color: var(--second-bg-color);
     padding: 5rem 9%;
-}
-
-.projects h2 {
-    margin-bottom: 4rem;
+    background-color: var(--second-bg-color);
+  }
+  
+  .heading {
     text-align: center;
     font-size: 3rem;
     color: var(--text-color);
-}
-
-.project-container {
+    margin-bottom: 4rem;
+  }
+  
+  .project-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
-    justify-content: center;
-    align-items: stretch;
-}
-
-.project-box {
+    gap: 2rem;
+  }
+  
+  .project-box {
     position: relative;
+    overflow: hidden;
     border-radius: 1.5rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    background: var(--bg-color);
-    transition: transform 0.5s ease;
-}
-
-.project-box:hover {
-    transform: scale(1.05);
-}
-
-.project-box img {
+    transition: transform 0.3s ease;
+  }
+  
+  .project-box img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
-    transition: .5s ease;
-    opacity: 0.8;
-}
-
-.project-box:hover img {
+    transition: all 0.5s ease;
+  }
+  
+  .project-box:hover img {
+    filter: blur(5px);
     transform: scale(1.1);
-    opacity: 1;
-}
-
-.project-layer {
+    opacity: 0.7;
+  }
+  
+  .project-layer {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 2rem;
-    transform: translateY(100%);
-    transition: transform 0.5s ease;
-}
-
-.project-box:hover .project-layer {
-    transform: translateY(0);
-}
-
-.project-layer h4 {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .project-box:hover .project-layer {
+    opacity: 1;
+  }
+  
+  .project-layer h4 {
     font-size: 2rem;
-    color: var(--text-color);
     margin-bottom: 1rem;
-}
-
-.project-layer p {
+    background: transparent;
+  }
+  
+  .project-layer p {
     font-size: 1.4rem;
-    color: var(--text-color);
-    margin-bottom: 1.5rem;
-}
-
-.project-layer a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background: var(--main-color);
-    border-radius: 50%;
-    text-decoration: none;
-    transition: background 0.3s ease;
-}
-
-.project-layer a:hover {
-    background: var(--text-color);
-}
-
-.project-layer a i {
-    font-size: 1.5rem;
-    color: var(--second-bg-color);
-}
+    margin: 0;
+    background: transparent;
+  }

@@ -1,3 +1,14 @@
+.skills-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--second-bg-color)
+}
+
 .skills {
     background: var(--second-bg-color);
     padding: 5rem 9%;
@@ -17,6 +28,7 @@
     margin: 4rem 0;
     padding: 3rem 0;
     border-top: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
   }
   
   .skill-category h3 {
@@ -59,4 +71,24 @@
     font-size: 1.8rem;
     color: var(--text-color);
   }
+  @media screen and (max-width: 768px) {
+    .skills-container {
+      flex-direction: column;
+      height: auto;
+      padding: 2rem 1rem;
+    }
   
+    .skills-section {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .skills-grid {
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: 1rem;
+    }
+  }

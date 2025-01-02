@@ -10,11 +10,21 @@
     font-family: 'Nunito', sans-serif;
     background-color: var(--bg-color);
 }
-:root{
-    --bg-color: #191f36;
-    --snd-bg-color: #262B40;
-    --text-color:#fff;
-    --main-color:#59B2F4;
-    
+:root {
+  --bg-color: #0D1117;         /* Dark Charcoal Blue */
+  --snd-bg-color: #161B22;     /* Very Dark Grayish Blue */
+  --text-color: #E6E6E6;        /* Light Gray Text */
+  --main-color: #1DB954;       /* Vibrant Green */
+  --accent-color: #FF8C00;     /* Vibrant Orange (Optional) */
+  --border-color: #333C44;     /* Darker border for contrast */
+}
+.body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+.success-snackbar {
+  background: #4CAF50 !important;
+}
+
+.error-snackbar {
+  background: #F44336 !important;
 }

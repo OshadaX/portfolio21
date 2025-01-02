@@ -1,1 +1,74 @@
-<p>contact works!</p>
+<section class="contact" id="contact">
+    <div class="contact-content">
+        <h2 class="heading">Get In <span>Touch</span></h2>
+        <p class="sub-heading">Feel free to reach out to me for any questions or opportunities!</p>
+
+        <div class="contact-container">
+            <!-- Left Side - Contact Info -->
+            <div class="contact-left">
+              <div class="contact-info">
+                  <div class="info-box">
+                      <i class='bx bx-envelope'></i>
+                      <div class="info-text">
+                          <h3>Email</h3>
+                          <p>your.emailexample.com</p>
+                      </div>
+                  </div>
+          
+                  <div class="info-box">
+                      <i class='bx bx-phone'></i>
+                      <div class="info-text">
+                          <h3>Phone</h3>
+                          <p>+94 XX XXX XXXX</p>
+                      </div>
+                  </div>
+          
+                  <div class="info-box">
+                      <i class='bx bx-location-plus'></i>
+                      <div class="info-text">
+                          <h3>Location</h3>
+                          <p>Your Location, City, Country</p>
+                      </div>
+                  </div>
+          
+                  <div class="social-media">
+                      <h3>Connect With Me</h3>
+                      <div class="social-icons">
+                          <a href="#" target="_blank" class="social-link"><i class='bx bxl-linkedin'></i></a>
+                          <a href="#" target="_blank" class="social-link"><i class='bx bxl-github'></i></a>
+                          <a href="#" target="_blank" class="social-link"><i class='bx bxl-twitter'></i></a>
+                          <a href="#" target="_blank" class="social-link"><i class='bx bxl-instagram'></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+
+            <!-- Right Side - Contact Form -->
+            <div class="contact-right">
+                <form (ngSubmit)="onSubmit($event)" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" required>
+                        <label>Full Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" required>
+                        <label>Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" required>
+                        <label>Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea required rows="6"></textarea>
+                        <label>Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <i class='bx bx-send'></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
